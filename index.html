@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Workout App</title>
+  <!-- Bootstrap Icons CDN -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+  <nav class="navbar navbar-dark bg-black p-3">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">WORKOUT</a>
+      <div>
+        <!-- Navigation links -->
+        <a href="#" class="text-white mx-3" >Exercises</a>
+        <a href="#" class="text-white mx-3">Trainers</a>
+        <a href="#" class="text-white mx-3">Pricing</a>
+        <a href="#" class="text-white mx-3">Login</a>
+      </div>
+    </div>
+  </nav>
+<!-- Time and calorie burn stats -->
+  <section class="container cardio-section">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <div class="new-box">
+            <button class="btn btn-success" id="new-btn">new</button>
+            <span >High Intensity workout to burn calories</span>
+        </div>
+          <!-- Popular Exercises Grid Section -->
+    <div class="container1">
+        <div class="time-box">
+            <span id="time1">38:14</span><br>
+            <span>Time</span>
+        </div>
+        <div class="calories-box">
+            <span id="calories1">165</span><br>
+            <span>EST CALORIES</span>
+        </div>
+    </div>
+    
+        <h1 class="cardio-title" id="cardio">Cardio <br> Exercise</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+       
+        <button class="btn btn-success" >Get Started</button>
+        <button class="btn btn-secondary">Preview</button>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="assets/b1.png" class="img-fluid rounded" alt="Cardio Girl">
+      </div>
+    </div>
+  </section>
+<!-- Popular Exercises Grid Section -->
+  <section class="container py-5">
+    <h2 class="text-white mb-4">Popular Exercises</h2>
+    <div class="row g-3">
+      <div class="col-md-4" id="box">
+        <div class="exercise-card">
+          <img src="assets/b4.png" class="exercise-img" alt="Treadmill" />
+          <div class="exercise-overlay">Treadmill</div>
+          <div class="exercise-time">58:24</div>
+        </div>
+        <p class="words">250 est calories</p>
+      </div>
+      <div class="col-md-4">
+        <div class="exercise-card">
+          <img src="assets/b7.png" class="exercise-img" alt="Stretching" />
+          <div class="exercise-overlay">Stretching</div>
+          <div class="exercise-time">58:24</div>
+        </div>
+        <p class="words">250 est calories</p>
+      </div>
+      <div class="col-md-4">
+        <div class="exercise-card">
+          <img src="assets/b2.png" class="exercise-img" alt="Yoga" />
+          <div class="exercise-overlay">Yoga</div>
+          <div class="exercise-time">58:24</div>
+        </div>
+        <p class="words">250 est calories</p>
+      </div>
+      <div class="col-md-4">
+        <div class="exercise-card">
+          <img src="assets/b9.png" class="exercise-img" alt="Running" />
+          <div class="exercise-overlay">Running</div>
+          <div class="exercise-time">58:24</div>
+        </div>
+        <p class="words">250 est calories</p>
+      </div>
+      <div class="col-md-4">
+        <div class="exercise-card">
+          <img src="assets/b6.png" class="exercise-img" alt="Lifting" />
+          <div class="exercise-overlay">Lifting</div>
+          <div class="exercise-time">58:24</div>
+        </div>
+        <p class="words">250 est calories</p>
+      </div>
+      <div class="col-md-4">
+        <div class="exercise-card">
+          <img src="assets/b3.png" class="exercise-img" alt="Push Up" />
+          <div class="exercise-overlay">Push Up</div>
+          <div class="exercise-time">58:24</div>
+        </div>
+        <p class="words">250 est calories</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Workout Program Information Section -->
+  <section class="program-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2 class="text-white" id="workoutprogram">Workout<br>Program <br> Made <br>For You</h2>
+          <!-- <img src="assets/patch.png" class="img-fluid" alt="Workout Woman" /> -->
+         
+        </div>
+        <div class="col-md-6 text-left">
+         
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Nulla quis lorem ut libero malesuada feugiat.
+            <br>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br> Quam officia incidunt expedita 
+          </p><br>
+          <button class="btn btn-success">Get Started</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Trainers Section -->
+  <section class="container py-5">
+    <h3 class="text-white mb-4">Our Trainers</h3>
+    <div class="row g-4">
+      <div class="col-md-4 text-center">
+        <img src="assets/b10.png" class="trainer-img" alt="Trainer" />
+        <p class="trainer-name">Samantha William<br><span class="trainer-role">Trainer</span></p>
+      </div>
+      <div class="col-md-4 d-flex flex-column align-items-center">
+        <img src="assets/b11.png" class="trainer-img" alt="Trainer" />
+        <p class="trainer-name">Karen Summer<br><span class="trainer-role">Trainer</span></p>
+      </div>
+      
+      <div class="col-md-4 text-center">
+        <img src="assets/b12.png" class="trainer-img" alt="Trainer" />
+        <p class="trainer-name">Jonathan Wise<br><span class="trainer-role">Trainer</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- List of available workout programs -->
+  <section class="container py-5">
+    <div class="row">
+      <div class="col-12">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item bg-dark text-white border-secondary d-flex justify-content-between align-items-center">
+                <div class="me-3 text-white">01</div> 
+                <div class="flex-grow-1 text-center">
+                  <div class="fw-bold">Workout Program</div>
+                  <small class="text-white">15 videos</small>
+                </div>
+                <i class="bi bi-arrow-right-circle-fill ms-3 fs-5"></i>
+              </li>
+                      
+<li class="list-group-item bg-dark text-white border-secondary d-flex justify-content-between align-items-center">
+    <div class="me-3 text-white">03</div> 
+    <div class="flex-grow-1 text-center">
+      <div class="fw-bold">High Intensity</div>
+      <small class="text-white">35 videos</small>
+    </div>
+    <i class="bi bi-arrow-right-circle-fill ms-3 fs-5"></i>
+  </li>
+  
+  <li class="list-group-item bg-dark text-white border-secondary d-flex justify-content-between align-items-center">
+    <div class="me-3 text-white">04</div> 
+    <div class="flex-grow-1 text-center">
+      <div class="fw-bold">Simple Workout</div>
+      <small class="text-white">35 videos</small>
+    </div>
+    <i class="bi bi-arrow-right-circle-fill ms-3 fs-5"></i>
+  </li>
+  
+  <li class="list-group-item bg-dark text-white border-secondary d-flex justify-content-between align-items-center">
+    <div class="me-3 text-white">05</div> 
+    <div class="flex-grow-1 text-center">
+      <div class="fw-bold">Burn Calories</div>
+      <small class="text-white">39 videos</small>
+    </div>
+    <i class="bi bi-arrow-right-circle-fill ms-3 fs-5"></i>
+  </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer Section -->
+  <footer class="footer text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h6>WORKOUT</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.
+             Lorem ipsum dolor sit amet, consectetur </p>
+          </p>
+        </div>
+        <div class="col-md-2 ">
+          <h6>Business</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Partnership</a></li><br><br>
+            <li><a href="#" class="text-white">Career</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h6>Blogs</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Security</a></li><br><br>
+            <li><a href="#" class="text-white">Updates</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h6>Contact</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Contact Us</a></li><br><br>
+            <li><a href="#" class="text-white">Privacy Policy</a></li><br><br>
+            <li><a href="#" class="text-white">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
