@@ -1,0 +1,204 @@
+
+  /* Base styles */
+body {
+    background-color: #000; /* Sets a dark background for the entire page */
+    color: #fff;            /* White text for contrast */
+    font-family: 'Segoe UI', sans-serif; /* Clean and modern font */
+  }
+  
+  /* Button styling */
+  #new-btn {
+    padding: 10px 20px;        /* Space inside the button */
+    border-radius: 40px;       /* Rounded corners for pill-shaped button */
+  }
+  
+  /* Box styling for UI elements (like tags or pills) */
+  .new-box {
+    border: 2px solid #1b1f1c; /* Subtle border to separate from background */
+    background-color: #1b1f1c; /* Slightly lighter than body bg */
+    border-radius: 25px;       /* Fully rounded corners */
+    padding: 10px 15px;        /* Inner spacing */
+    display: inline-flex;      /* Horizontally align items */
+    align-items: center;
+    gap: 10px;                 /* Space between inline items */
+  }
+  
+  /* Container for time and calories display */
+  .container1 {
+    position: absolute;
+    top: 35%;                  /* Vertical position on screen */
+    right: 8%;                 /* Distance from right edge */
+    display: flex;
+    flex-direction: column;    /* Stack children vertically */
+    gap: 10px;
+    align-items: flex-end;
+    z-index: 10;               /* Make sure it sits above other elements */
+  }
+  
+  /* Time and calories display boxes */
+  .time-box,
+  .calories-box {
+    border: 2px solid #1b1f1c;
+    background-color: #1b1f1c;
+    border-radius: 10px;
+    padding: 10px 15px;
+    width: fit-content;        /* Shrinks to content size */
+    color: white;
+    text-align: right;
+    font-family: sans-serif;
+  }
+  
+  /* Highlighting time value */
+  #time1 {
+    color: yellow;             /* Emphasis on time using bright color */
+    font-size: 30px;
+    font-weight: 600;
+  }
+  
+  /* Highlighting calorie count */
+  #calories1 {
+    color: red;                /* Emphasis on calories */
+    font-size: 30px;
+    font-weight: 600;
+  }
+  
+  /* Link reset utility */
+  .mx-3 {
+    text-decoration: none;     /* Removes underline */
+  }
+  
+  /* Big icon size (probably a cardio icon) */
+  #cardio {
+    font-size: 150px;          /* Large visual impact */
+  }
+  
+  /* Improper use, might not work as intended */
+  button {
+    justify-content: space-between; /* Only effective if display is flex */
+  }
+  
+  /* Utility class for emphasizing text */
+  .highlight {
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  /* Section padding and alignment */
+  .cardio-section {
+    padding: 80px 0;
+    text-align: left;
+  }
+  
+  /* Cardio title heading */
+  .cardio-title {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  /* Image in exercise card */
+  .exercise-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;        /* Maintains aspect ratio without distortion */
+    border-radius: 10px;
+  }
+  
+  /* Exercise card styling */
+  .exercise-card {
+    position: relative;       /* Needed for overlay positioning */
+    color: #fff;
+  }
+  
+  /* Overlay text on exercise image */
+  .exercise-overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    display: flex;
+    justify-content: baseline;
+    font-size: 35px;
+    text-shadow: #0e0e0e;     /* Might not be visible, consider using rgba */
+  }
+  
+  /* Small text below exercises */
+  .words {
+    padding-top: 15px;
+    font-size: x-small;
+  }
+  
+  /* Title with background patch effect */
+  #workoutprogram {
+    font-size: 80px;
+    background-image: url("assets/patch.png");
+    background-size: 120%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+  
+  /* Time label over exercise card */
+  .exercise-time {
+    position: absolute;
+    bottom: 8px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+  }
+  
+  /* Background section for workout programs */
+  .program-section {
+    background-color: #111;
+    padding: 60px 0;
+  }
+  
+  /* Trainer image styling */
+  .trainer-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+  
+  /* Trainer name and role */
+  .trainer-name {
+    color: #fff;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+  .trainer-role {
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+  
+  /* List group item spacing and icon position */
+  .list-group-item {
+    padding: 1.5rem;
+    position: relative;
+  }
+  .list-group-item i {
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  /* Footer styling */
+  .footer {
+    padding: 60px 0;
+    background-color: #111;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  
+  /* Column link styling in footer */
+  .col-md-2 {
+    text-decoration: none;
+    margin: 20px 50px;
+  }
+  .text-white {
+    text-decoration: none;
+  }
+  
